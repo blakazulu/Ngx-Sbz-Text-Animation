@@ -1,0 +1,23 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "ngx-sbz-text-animation",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ng-packagr -p package.json"
+  },
+  "ngPackage": {
+    "assets": [
+      "styles/ngx-sbz-text-animation.css"
+    ],
+    "lib": {
+      "entryFile": "src/public-api.ts"
+    }
+  },
+  "peerDependencies": {
+    "@angular/common": "^10.1.6",
+    "@angular/core": "^10.1.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
