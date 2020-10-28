@@ -13,6 +13,22 @@
       "entryFile": "src/public-api.ts"
     }
   },
+  "description": "This is directive for creating floating text background",
+  "keywords": [
+    "Angular",
+    "Library",
+    "Directive",
+    "Animation",
+    "Text",
+    "Floating",
+    "Background"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blakazulu/Ngx-Sbz-Text-Animation"
+  },
+  "homepage": "https://liraz-sbz.com",
   "peerDependencies": {
     "@angular/common": "^10.1.6",
     "@angular/core": "^10.1.6"

@@ -4,7 +4,11 @@
   "scripts": {
     "build_lib": "ng build text-animation",
     "npm_pack": "cd projects/text-animation/dist && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run npm_pack",
+    "copy-license": "copy .\\LICENSE .\\projects\\text-animation\\dist",
+    "copy-readme": "copy .\\README.md .\\projects\\text-animation\\dist",
+    "copy-files": "npm run copy-license && npm run copy-readme",
+    "npm-publish": "npm publish projects/text-animation/dist/ngx-sbz-text-animation-1.0.0.tgz"
   },
   "private": true,
   "dependencies": {
