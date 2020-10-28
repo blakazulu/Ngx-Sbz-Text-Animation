@@ -1,0 +1,20 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "ngx-sbz-text-animation",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^10.1.6",
+    "@angular/core": "^10.1.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/ngx-sbz-text-animation.umd.js",
+  "module": "fesm2015/ngx-sbz-text-animation.js",
+  "es2015": "fesm2015/ngx-sbz-text-animation.js",
+  "esm2015": "esm2015/ngx-sbz-text-animation.js",
+  "fesm2015": "fesm2015/ngx-sbz-text-animation.js",
+  "typings": "ngx-sbz-text-animation.d.ts",
+  "metadata": "ngx-sbz-text-animation.metadata.json",
+  "sideEffects": false
+}

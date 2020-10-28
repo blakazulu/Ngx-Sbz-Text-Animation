@@ -1,27 +1,85 @@
-# MyWorkspace
+# Floating Text Background Animation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+![Current Version](https://img.shields.io/badge/Current%20Version-1.0-brightgreen>)    ![License](<https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-blue>)</br>
 
-## Development server
+An angular 10 directive for floating text background animation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Demo
+* [Stackblitz]
+ 
+### Installation
+1. run this:
+   ```shell
+   npm i text-animation
+   ```
+2. go to app.module and add this:
+   ```shell
+   import {TextAnimationModule} from 'text-animation';
+   
+   @NgModule({
+       imports: [
+           TextAnimationModule
+       ]
+   })
+   ```
+3. add the css, you can do it in 2 ways:
+       * add the import to the start of the main styles file inside the src folder (styles.css / styles.scss):
+       ```shell
+       @import "../node_modules/ngx-sbz-text-animation/styles/ngx-sbz-text-animation.css";
+       ```
+      * add the style to the styles array inside the angular.json file:
+          ```shell
+          "architect": {
+          	"build": {
+          	  ...
+          	  "options": {
+          		...
+          		"styles": [
+          		  "src/styles.scss",
+          		  "node_modules/ngx-sbz-text-animation/styles/ngx-sbz-text-animation.css"
+          		],
+          		...
+          	  },
+          	  ...
+          	},
+          }
+          ```
+4. use like this:
+   ```shell
+   <div sbzTextAnimation></div>
+   ```
+5. Enjoy :)
 
-## Code scaffolding
+### Inputs to customize to animation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Input            | Type              | Default        | Description                               |
+| ---------------- | ------------------| -------------- | ----------------------------------------- |
+| maxFontSize      | number            | 20             | max font size of the text                 |
+| colorSchemeArray | string[]          | Rainbow colors | colors of the text                        |
+| position         | 'left', 'right'  | 'right'        | position of the flying text on the screen |
 
-## Build
+#### Contribution
+Want to contribute? Great!
+It's open source.
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#### Thank you
+this directive is an updated version of [g1eb]'s work.
+he made this directive for angularJS.
+I just updated it for Angular 10 (and added a few features)
 
-## Running unit tests
+#### License
+* You can find the license here: [License]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+[//]: # (
+These are reference links used in the body of this note and get stripped out when the markdown processor does its job.
+There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+   [g1eb]: <https://github.com/g1eb/angular-text-animation>
+   [License]: <https://github.com/blakazulu/Wasa/blob/master/LICENSE>

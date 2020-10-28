@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "ngx-sbz-text-animation.directive.d.ts",
+  "sourceRoot": "C:/myNpmPackage/text-animation-workspace/projects/text-animation/src/",
+  "sources": [
+    "lib/ngx-sbz-text-animation.directive.ts"
+  ],
+  "names": [],
+  "mappings": "AAAA,OAAO,EAAC,aAAa,EAAa,UAAU,EAAS,SAAS,EAAC,MAAM,eAAe,CAAC;AAErF,qBAGa,4BAA6B,YAAW,aAAa;IAKpD,OAAO,CAAC,UAAU;IAAc,OAAO,CAAC,QAAQ;IAJnD,WAAW,SAAM;IACjB,gBAAgB,EAAE,MAAM,EAAE,CAAC;IAC3B,QAAQ,EAAE,MAAM,GAAG,OAAO,CAAW;gBAE1B,UAAU,EAAE,UAAU,EAAU,QAAQ,EAAE,SAAS;IAGvE,eAAe,IAAI,IAAI;IAKvB,OAAO,CAAC,IAAI;IAgDZ,OAAO,CAAC,iBAAiB;CA+B1B"
+}
