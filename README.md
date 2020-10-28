@@ -10,7 +10,7 @@ An angular 10 directive for floating text background animation
 ### Installation
 1. run this:
    ```shell
-   npm i text-animation
+   npm i ngx-sbz-text-animation
    ```
 2. go to app.module and add this:
    ```shell
