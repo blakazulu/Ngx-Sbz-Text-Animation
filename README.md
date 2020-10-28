@@ -82,4 +82,4 @@ There is no need to format nicely because it shouldn't be seen. Thanks SO - http
 
 
    [g1eb]: <https://github.com/g1eb/angular-text-animation>
-   [License]: <https://github.com/blakazulu/Wasa/blob/master/LICENSE>
+   [License]: <https://github.com/blakazulu/Ngx-Sbz-Text-Animation/blob/main/LICENSE>
