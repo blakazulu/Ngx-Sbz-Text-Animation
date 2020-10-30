@@ -81,6 +81,6 @@ I just updated it for Angular 10 (and added a few features)
 These are reference links used in the body of this note and get stripped out when the markdown processor does its job.
 There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-   [Stackblitz]: <https://stackblitz.com/edit/floating-text-animation?file=src/app/app.component.html>
+   [Stackblitz]: <https://stackblitz.com/edit/ngx-sbz-text-animation?file=src/app/app.component.html>
    [g1eb]: <https://github.com/g1eb/angular-text-animation>
    [License]: <https://github.com/blakazulu/Ngx-Sbz-Text-Animation/blob/main/LICENSE>
