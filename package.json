@@ -1,6 +1,6 @@
 {
   "name": "text-animation-workspace",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "build_lib": "ng build text-animation",
     "npm_pack": "cd projects/text-animation/dist && npm pack",
