@@ -1,4 +1,5 @@
 # Floating Text Background Animation
+![demo-gif](https://media.giphy.com/media/3MA6V372FmxEhZ1A71/giphy.gif)
 
 ![Current Version](https://img.shields.io/badge/Current%20Version-1.0-brightgreen>)   
  ![License](https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-blue)
