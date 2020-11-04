@@ -7,6 +7,7 @@ export class NgxSbzTextAnimationDirective implements AfterViewInit {
   @Input() maxFontSize = 20;
   @Input() colorSchemeArray: string[];
   @Input() position: 'left' | 'right' = 'right';
+  @Input() percentOfScreen = 30;
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {
   }
@@ -65,34 +66,31 @@ export class NgxSbzTextAnimationDirective implements AfterViewInit {
   }
 
   private animateBackground(): void {
-    // need to access them in the setTimeout function
     const renderer = this.renderer;
     const elementRef = this.elementRef;
 
     const chars = [...Array(26)].map((e, i) => (i + 10).toString(36));
 
     setInterval(() => {
-      for (let i = 0; i < Math.floor(Math.random() * 5); i++) {
-        const duration = Math.floor(Math.random() * 15);
-        const offset = Math.floor(Math.random() * (45 - duration * 3)) + 3;
-        const size = 12 + (this.maxFontSize - duration);
-        const color = this.colorSchemeArray[Math.floor(Math.random() * this.colorSchemeArray.length)];
+      const duration = Math.floor(Math.random() * 15);
+      const offset = Math.floor(Math.random() * this.percentOfScreen);
+      const size = Math.floor(Math.random() * this.maxFontSize);
+      const color = this.colorSchemeArray[Math.floor(Math.random() * this.colorSchemeArray.length)];
 
-        const span = renderer.createElement('span');
-        span.innerText = chars[Math.floor(Math.random() * chars.length)];
-        renderer.addClass(span, 'animated-text');
+      const span = renderer.createElement('span');
+      span.innerText = chars[Math.floor(Math.random() * chars.length)];
+      renderer.addClass(span, 'animated-text');
 
-        renderer.setStyle(span, 'color', color);
-        renderer.setStyle(span, this.position, `${offset}vw`);
-        renderer.setStyle(span, 'font-size', `${size}px`);
-        renderer.setStyle(span, 'animation-duration', `${duration}s`);
-        renderer.setStyle(span, 'color', color);
+      renderer.setStyle(span, 'color', color);
+      renderer.setStyle(span, this.position, `${offset}vw`);
+      renderer.setStyle(span, 'font-size', `${size}px`);
+      renderer.setStyle(span, 'animation-duration', `${duration}s`);
+      renderer.setStyle(span, 'color', color);
 
-        renderer.appendChild(elementRef.nativeElement, span);
-        setTimeout(() => {
-          renderer.removeChild(elementRef.nativeElement, elementRef.nativeElement.firstChild);
-        }, duration * 1000, false, elementRef, renderer);
-      }
-    }, 250);
+      renderer.appendChild(elementRef.nativeElement, span);
+      setTimeout(() => {
+        renderer.removeChild(elementRef.nativeElement, elementRef.nativeElement.firstChild);
+      }, duration * 1000);
+    }, 100);
   }
 }

@@ -5,15 +5,15 @@
   text-shadow: 0 0 1px #ffffff;
   font-size: 24px;
   position: fixed;
-  top: -50px;
+  bottom: -100vh;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-animation-name: float-animation;
   animation-name: float-animation;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes float-animation {
@@ -28,10 +28,10 @@
     opacity: 1;
   }
   75% {
-    opacity: 0;
+    opacity: 0.75;
   }
   100% {
-    top: -25px;
+    top: 0;
     opacity: 0;
   }
 }
@@ -48,10 +48,10 @@
     opacity: 1;
   }
   75% {
-    opacity: 0;
+    opacity: 0.75;
   }
   100% {
-    top: -25px;
+    top: 0;
     opacity: 0;
   }
 }

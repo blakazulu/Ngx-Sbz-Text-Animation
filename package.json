@@ -8,7 +8,7 @@
     "copy-license": "copy .\\LICENSE .\\projects\\text-animation\\dist",
     "copy-readme": "copy .\\README.md .\\projects\\text-animation\\dist",
     "copy-files": "npm run copy-license && npm run copy-readme",
-    "npm-publish": "npm publish projects/text-animation/dist/ngx-sbz-text-animation-1.0.0.tgz"
+    "npm-publish": "npm publish projects/text-animation/dist/ngx-sbz-text-animation-1.0.6.tgz"
   },
   "private": true,
   "dependencies": {
