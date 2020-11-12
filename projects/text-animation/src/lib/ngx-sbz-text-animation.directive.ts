@@ -8,6 +8,7 @@ export class NgxSbzTextAnimationDirective implements AfterViewInit {
   @Input() colorSchemeArray: string[];
   @Input() position: 'left' | 'right' = 'right';
   @Input() percentOfScreen = 30;
+  @Input() zIndex = -1;
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {
   }
@@ -86,6 +87,7 @@ export class NgxSbzTextAnimationDirective implements AfterViewInit {
       renderer.setStyle(span, 'font-size', `${size}px`);
       renderer.setStyle(span, 'animation-duration', `${duration}s`);
       renderer.setStyle(span, 'color', color);
+      renderer.setStyle(span, 'z-index', this.zIndex);
 
       renderer.appendChild(elementRef.nativeElement, span);
       setTimeout(() => {

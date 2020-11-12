@@ -1,7 +1,7 @@
 # Floating Text Background Animation
 ![demo-gif](https://media.giphy.com/media/3MA6V372FmxEhZ1A71/giphy.gif)
 
-![Current Version](https://img.shields.io/badge/Current%20Version-1.0.6-brightgreen>)   
+![Current Version](https://img.shields.io/badge/Current%20Version-2.0.0-brightgreen>)   
  ![License](https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-blue)
 
 An angular 10 directive for floating text background animation
@@ -60,6 +60,7 @@ An angular 10 directive for floating text background animation
 | colorSchemeArray | string[]          | Rainbow colors | colors of the text                        |
 | position         | 'left', 'right'   | 'right'        | position of the flying text on the screen |
 | percentOfScreen  | number            | 30             | percent of the text on the screen         |
+| zIndex           | number            | -1             | z-index of the text.                      |
 
 #### Contribution
 Want to contribute? Great!

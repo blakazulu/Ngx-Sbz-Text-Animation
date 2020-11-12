@@ -1,7 +1,7 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "ngx-sbz-text-animation",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "scripts": {
     "build": "ng-packagr -p package.json"
   },
